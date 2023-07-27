@@ -1,0 +1,169 @@
+* {
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    background-color: #f1f3f4;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.first-nav {
+    width: 100%;
+    height: 50px;
+    background-color: #217346de;
+}
+
+.second-nav {
+    display: flex;
+    margin-top: 13px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    align-items: center;
+    gap: 15px;
+}
+
+.third-nav {
+    margin-top: 7px;
+}
+
+.third-nav label {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.third-nav input {
+    width: 90%;
+    border: none;
+}
+
+.formula-icon {
+    width: 1.2rem;
+}
+
+
+.nav {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    gap: 10px;
+    column-gap: 10;
+    display: flex;
+
+    margin: 16px;
+    margin-top: 21px;
+}
+
+.home {
+    background-color: #f1f3f4;
+    ;
+    padding: 5px;
+    color: black !important;
+}
+
+.font {
+    margin: 10px;
+    display: flex;
+    margin-top: 4px;
+    gap: 10px;
+}
+
+.color input {
+    display: none;
+}
+
+#font-family {
+    border: none;
+    width: 150px;
+    height: 22px;
+}
+
+#font-size {
+    border: none;
+}
+
+#download {
+    font-size: 1.5rem;
+    border: none;
+}
+
+
+th,
+td {
+    border: 1px solid #333;
+    width: 180px;
+}
+
+td:focus {
+    outline: none;
+    cursor: cell;
+}
+
+#bold-btn {
+    font-size: 0.7rem;
+    border: none;
+
+}
+
+#italics-btn {
+    font-size: 0.7rem;
+    border: none;
+}
+
+#underline-btn {
+    font-size: 0.7rem;
+    border: none;
+}
+
+
+#left-align {
+    font-size: 0.7rem;
+    border: none;
+}
+
+#center-align {
+    font-size: 0.7rem;
+    border: none;
+}
+
+#right-align {
+    font-size: 0.7rem;
+    border: none;
+}
+
+#copy-btn {
+    font-size: .7rem;
+    border: none;
+
+}
+
+#cut-btn {
+    font-size: 0.7rem;
+    color: red;
+    border: none;
+
+}
+
+#paste-btn {
+    font-size: 0.7rem;
+    border: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}

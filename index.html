@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Excel Clone</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+
+  <body>
+    <div class="first-nav">
+      <ul class="nav">
+        <li>
+          <a href="#">File</a>
+        </li>
+        <li>
+          <a class="home" href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Insert</a>
+        </li>
+        <li>
+          <a href="#">Layout</a>
+        </li>
+        <li>
+          <a href="#">Help</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="second-nav">
+      <div class="copy">
+        <button id="copy-btn">
+          <i class="material-icons">content_copy</i>
+        </button>
+        <button id="cut-btn"><i class="material-icons">content_cut</i></button>
+        <button id="paste-btn">
+          <i class="material-icons">content_paste</i>
+        </button>
+      </div>
+      <div class="font">
+        <select id="font-family">
+          <option value="serif">Serif</option>
+          <option value="sans-serif">Sans-serif</option>
+          <option value="monospace">Monospace</option>
+          <option value="cursive">Cursive</option>
+          <option value="fantasy">Fantasy</option>
+        </select>
+        <select id="font-size">
+          <option value="14px">14</option>
+          <option value="16px">16</option>
+          <option value="18px">18</option>
+          <option value="18px">20</option>
+          <option value="18px">22</option>
+          <option value="18px">24</option>
+          <option value="18px">26</option>
+          <option value="18px">28</option>
+          <option value="18px">30</option>
+          <option value="18px">32</option>
+          <option value="18px">34</option>
+          <option value="18px">36</option>
+          <option value="18px">38</option>
+          <option value="18px">40</option>
+        </select>
+      </div>
+      <div class="format">
+        <button id="bold-btn"><i class="material-icons">format_bold</i></button>
+        <button id="italics-btn">
+          <i class="material-icons">format_italic</i>
+        </button>
+        <button id="underline-btn">
+          <i class="material-icons">format_underlined</i>
+        </button>
+      </div>
+
+      <div class="align">
+        <button id="left-align">
+          <i class="material-icons al">format_align_left</i>
+        </button>
+        <button id="center-align">
+          <i class="material-icons al">format_align_center</i>
+        </button>
+        <button id="right-align">
+          <i class="material-icons al">format_align_right</i>
+        </button>
+      </div>
+      <div class="color">
+        <label for="text-color"
+          ><i class="material-icons">format_color_text</i></label
+        >
+        <input type="color" id="text-color" />
+        <label for="bg-color"
+          ><i class="material-icons">format_color_fill</i></label
+        >
+        <input type="color" id="bg-color" />
+      </div>
+      <div class="download">
+        <button onclick="downloadJson()">
+          <span class="material-icons download" id="download"
+            >cloud_download</span
+          >
+        </button>
+        <input type="file" id="jsonFile" accept=".json" />
+      </div>
+    </div>
+
+    <div class="third-nav">
+      <p id="current-cell" style="display: inline">No Cell</p>
+      <img
+        class="formula-icon"
+        src="https://img.icons8.com/ios/50/000000/formula-fx.png"
+      />
+      <input type="text" name="formula" id="formula" />
+    </div>
+    <!-- <input /> -->
+
+    <table class="my-table">
+      <thead>
+        <tr id="table-heading-row">
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>
